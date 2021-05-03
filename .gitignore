@@ -7,9 +7,5 @@
 config.yml
 *.mod
 *.sum
-./components/*.mod
-./components/*.sum
-./generator/*.mod
-./generator/*.sum
 # Testing
 *.tmp
