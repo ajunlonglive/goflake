@@ -1,0 +1,15 @@
+# Binaries, plugins, libs
+*.dll
+*.dylib
+*.exe
+*.exe~
+*.so
+config.yml
+*.mod
+*.sum
+./components/*.mod
+./components/*.sum
+./generator/*.mod
+./generator/*.sum
+# Testing
+*.tmp
