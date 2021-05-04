@@ -16,7 +16,7 @@ func TestObtainPID(t *testing.T) {
 
 func TestTimeSinceOrganizationEpoch(t *testing.T) {
 
-	result := TimeSinceOrganizationEpoch()
+	result := TimeSinceOrganizationEpoch(1609459201000)
 	fmt.Println(result)
 	if result <= 1000000  {
 		t.Errorf("Improper Epoch Time calculated.")
@@ -54,3 +54,4 @@ func TestRandStringCreatesRandomString(t *testing.T) {
 		t.Errorf("No random string constructed or returned.")
 	}
 }
+
