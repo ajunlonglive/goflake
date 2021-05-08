@@ -15,8 +15,7 @@
 > A highly scalable, customizable, and serverless unique ID generator for use in distributed systems. Written in GoLang. Inspired by Twitters Snowflake. 
 <br>
 GoFlake is a small library that quickly generates unique identifiers in the microservices space that don't require an additional server to operate. It is based off of Twitters Snowflake project. 
-<br>
-<br>
+
 * Its criteria are : 
     * A check digit
     * An epoch time in Milliseconds
@@ -45,6 +44,7 @@ A generated Identifier would look like this : ``0-14591498880493-0311-425471-43Q
 <br>
 <br>
 <br>
+
 ## Installation
 
 Linux:
