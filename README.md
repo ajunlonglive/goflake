@@ -27,9 +27,11 @@ GoFlake is a small library that quickly generates unique identifiers in the micr
 The Check digit uses 0 by default. The purpose for it is for auditing. You can set the checkdigit to a 1 later if you wish and observe all IDs that were generated with a 1. Use it as an event code if you would like. Its your call.
 <br>
 <br>
+
 Running things on the same clock in distributed systems is a tough problem to solve. An Epoch time is used. The Epoch time is set in ``components/epoch.go`` . Set an epoch time in milliseconds that you would consider your microservice's Epoch and whenever an object is created the time since then in milliseconds will be generated into the IDs field.
 <br>
 <br>
+
 A service number is used to determine where the object created is being used. For example ``311`` . In my Microservice 3 is for the Comments Service. 1 for the REST protocol. and 1 for the Deployment method - localhost. This can be tailored to your liking.
 <br>
 <br>
@@ -39,6 +41,7 @@ The process ID is the next field and is taken from the machine that is running t
 Finally a 5 digit random sequence number adds a 5 character string with : a-z A-Z 0-9
 <br>
 <br>
+
 A generated Identifier would look like this : ``0-14591498880493-0311-425471-43Que``
 
 <br>
