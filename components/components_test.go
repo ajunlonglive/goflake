@@ -1,8 +1,8 @@
 package components
 
 import (
-	"testing"
 	"fmt"
+	"testing"
 )
 
 func TestObtainPID(t *testing.T) {
@@ -18,7 +18,7 @@ func TestTimeSinceOrganizationEpoch(t *testing.T) {
 
 	result := TimeSinceOrganizationEpoch(1609459201000)
 	fmt.Println(result)
-	if result <= 1000000  {
+	if result <= 1000000 {
 		t.Errorf("Improper Epoch Time calculated.")
 	}
 }
@@ -26,7 +26,7 @@ func TestTimeSinceOrganizationEpoch(t *testing.T) {
 func TestCheckDigitBooleanOperationFalse(t *testing.T) {
 	result := AddCheckDigit(false)
 	fmt.Println(result)
-	if result !=  "0" {
+	if result != "0" {
 		t.Errorf("Boolean false operation did not set properly")
 	}
 }
@@ -34,7 +34,7 @@ func TestCheckDigitBooleanOperationFalse(t *testing.T) {
 func TestCheckDigitBooleanOperationTrue(t *testing.T) {
 	result := AddCheckDigit(true)
 	fmt.Println(result)
-	if result !=  "1" {
+	if result != "1" {
 		t.Errorf("Boolean true operation did not set properly")
 	}
 }
@@ -54,4 +54,3 @@ func TestRandStringCreatesRandomString(t *testing.T) {
 		t.Errorf("No random string constructed or returned.")
 	}
 }
-

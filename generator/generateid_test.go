@@ -1,9 +1,8 @@
 package generator
 
 import (
-	"testing"
 	"fmt"
-
+	"testing"
 	//"github.com/hart87/goflake/components"
 )
 

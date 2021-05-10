@@ -1,7 +1,6 @@
 package generator
 
 import (
-
 	"github.com/hart87/goflake/components"
 )
 
@@ -9,8 +8,8 @@ import (
 func GenerateIdentifier() string {
 
 	//1 or 0 for auditing purposes. 0 Default
-	checkDigit := components.AddCheckDigit(false) 
-	
+	checkDigit := components.AddCheckDigit(false)
+
 	//Milliseconds ellapsed since your epoch. Set in parameter below
 	//1609459201000 = 01/01/2021 00:001 hrs GMT. milliseconds
 	epochInt := components.TimeSinceOrganizationEpoch(1609459201000)
@@ -20,7 +19,7 @@ func GenerateIdentifier() string {
 	serviceNum := components.SetServiceNumber("0311")
 
 	//Process ID for the machine this runs on
-	pidInt := components.ObtainPID() 
+	pidInt := components.ObtainPID()
 	pidStr := ConvertIntToAString(pidInt)
 
 	//equence number
@@ -30,4 +29,3 @@ func GenerateIdentifier() string {
 	result := checkDigit + "-" + epochStr + "-" + serviceNum + "-" + pidStr + "-" + seq
 	return result
 }
-
