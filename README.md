@@ -10,6 +10,7 @@
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/hart87/goflake?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/hart87/goflake?style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/hart87/goflake?style=for-the-badge)
+[![](https://goreportcard.com/badge/github.com/hart87/goflake)](https://goreportcard.com/badge/github.com/hart87/goflake?style=for-the-badge)
 
 
 > A highly scalable, customizable, and serverless unique ID generator for use in distributed systems. Written in GoLang. Inspired by Twitters Snowflake. 
