@@ -5,16 +5,21 @@
 
 
 ![GitHub go.mod Go version](https://img.shields.io/badge/go-1.16-9cf?style=for-the-badge)
-![Github code coverage](https://img.shields.io/badge/code%20coverage-96%25-brightgreen?style=for-the-badge)
+![Github code coverage](https://img.shields.io/badge/code%20coverage-100%25-brightgreen?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/hart87/GoFlake?style=for-the-badge)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/hart87/goflake?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/hart87/goflake?style=for-the-badge)
 ![GitHub](https://img.shields.io/github/license/hart87/goflake?style=for-the-badge)
+
+
 [![](https://goreportcard.com/badge/github.com/hart87/goflake)](https://goreportcard.com/badge/github.com/hart87/goflake?style=for-the-badge)
+[![Go Docs](https://godoc.org/github.com/jakehl/goid?status.svg)](https://pkg.go.dev/github.com/hart87/goflake)
+
 
 
 > A highly scalable, customizable, and serverless unique ID generator for use in distributed systems. Written in GoLang. Inspired by Twitters Snowflake. 
 <br>
+
 GoFlake is a small library that quickly generates unique identifiers in the microservices space that don't require an additional server to operate. It is based off of Twitters Snowflake project. 
 
 * Its criteria are : 
@@ -70,6 +75,7 @@ func main () {
 
 	for i := 0; i <= 100; i++ {
 		fmt.Println(generator.GenerateIdentifier())
+        //will print 100 IDs 
 	}
 
 }
@@ -77,7 +83,7 @@ func main () {
 
 Set your options in the ``generator/generateid.go`` and then the ``GenerateIdentifier()`` function returns a unique identifier.
 
-Additional documentation is available through ``godoc``. http://localhost:6060 and can be found under "Third Party"
+Additional documentation is available through ``godoc``. http://localhost:6060/pkg and can be found under "Third Party". The Go Reference is available at https://pkg.go.dev/github.com/hart87/goflake
 
 
 
