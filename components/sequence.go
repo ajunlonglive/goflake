@@ -11,7 +11,7 @@ const charset = "abcdefghijklmnopqrstuvwxyz" +
 var seededRand *rand.Rand = rand.New(
 	rand.NewSource(time.Now().UnixNano()))
 
-//Creates a random string on 5 characters. a-z A-Z 0-9
+//StringWithCharset creates a random string on 5 characters. a-z A-Z 0-9
 func StringWithCharset(length int, charset string) string {
 	b := make([]byte, length)
 	for i := range b {
@@ -20,7 +20,7 @@ func StringWithCharset(length int, charset string) string {
 	return string(b)
 }
 
-//Returns the String for the Sequence Number used in the identifier.
+//RandString returns the String for the Sequence Number used in the identifier.
 func RandString() string {
 	return StringWithCharset(5, charset)
 }
