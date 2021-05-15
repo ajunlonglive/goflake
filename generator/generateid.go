@@ -4,7 +4,8 @@ import (
 	"github.com/hart87/goflake/components"
 )
 
-//Sample : 0-14591498880493-0311-425471-43Que
+//GenerateIdentifier is the function that takes all of the components and generates the
+//unique identifier requested. Sample : 0-14591498880493-0311-425471-43Que
 func GenerateIdentifier() string {
 
 	//1 or 0 for auditing purposes. 0 Default
