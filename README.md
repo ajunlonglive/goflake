@@ -12,8 +12,9 @@
 ![GitHub](https://img.shields.io/github/license/hart87/goflake?style=for-the-badge)
 
 
-[![](https://goreportcard.com/badge/github.com/hart87/goflake)](https://goreportcard.com/badge/github.com/hart87/goflake?style=for-the-badge)
+[![Go Report Card](https://goreportcard.com/badge/github.com/hart87/goflake)](https://goreportcard.com/report/github.com/hart87/goflake)
 [![Go Docs](https://godoc.org/github.com/jakehl/goid?status.svg)](https://pkg.go.dev/github.com/hart87/goflake)
+[![Mentioned in Awesome Go](https://awesome.re/mentioned-badge-flat.svg)](https://github.com/avelino/awesome-go)
 
 
 
